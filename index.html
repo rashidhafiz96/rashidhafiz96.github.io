@@ -2,16 +2,104 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rashid Hafiz - Portfolio</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
-    h1 { color: #2c3e50; }
-    p { font-size: 18px; color: #555; }
+    /* General Styles */
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    h1, h2, h3 { margin-bottom: 10px; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; padding: 0; }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header img {
+      width: 120px; height: 120px; border-radius: 50%; border: 4px solid white;
+      margin-bottom: 20px;
+    }
+    nav a { margin: 0 15px; font-weight: bold; color: white; }
+
+    /* Sections */
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+    section:nth-child(even) { background: #f9f9f9; }
+    h2 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
+
+    /* Projects */
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    .card {
+      background: white; padding: 20px; border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;
+    }
+    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+
+    /* Contact */
+    .contact p { text-align: center; font-size: 18px; }
+    .contact a { color: #3498db; font-weight: bold; }
+
+    /* Footer */
+    footer {
+      background: #2c3e50; color: white;
+      text-align: center; padding: 20px;
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I’m Rashid Hafiz 👋</h1>
-  <p>Welcome to my portfolio website!</p>
-  <p>Projects coming soon 🚀</p>
+
+  <!-- Header -->
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Profile Picture">
+    <h1>Rashid Hafiz</h1>
+    <p>Aspiring Developer | Learner | Innovator</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <b>Rashid Hafiz</b>, and this is my personal portfolio website.  
+    I’m passionate about technology, learning new skills, and building exciting projects.  
+    Here I’ll showcase my work and journey 🚀.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Project 1</h3>
+        <p>Short description of your project goes here.</p>
+      </div>
+      <div class="card">
+        <h3>Project 2</h3>
+        <p>Another project description goes here.</p>
+      </div>
+      <div class="card">
+        <h3>Project 3</h3>
+        <p>Details about your project.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:rashidhafiz96@gmail.com">rashidhafiz96@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/rashidhafiz96">github.com/rashidhafiz96</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Rashid Hafiz | All Rights Reserved</p>
+  </footer>
+
 </body>
 </html>
