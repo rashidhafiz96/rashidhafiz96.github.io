@@ -3,49 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rashid Hafiz - Portfolio</title>
+  <title>Hafiz Rashid - Portfolio</title>
   <style>
-    /* General Styles */
-    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; }
+    body { margin: 0; font-family: Arial, sans-serif; line-height: 1.6; background: #f4f4f9; }
     h1, h2, h3 { margin-bottom: 10px; }
     a { text-decoration: none; color: inherit; }
     ul { list-style: none; padding: 0; }
+    section { padding: 50px 20px; max-width: 1000px; margin: auto; }
+    section:nth-child(even) { background: #ffffff; }
+    h2 { color: #2c3e50; margin-bottom: 20px; text-align: center; }
 
     /* Header */
     header {
       background: linear-gradient(135deg, #2c3e50, #3498db);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
+      color: white; padding: 60px 20px; text-align: center;
     }
     header img {
-      width: 120px; height: 120px; border-radius: 50%; border: 4px solid white;
-      margin-bottom: 20px;
+      width: 120px; height: 120px; border-radius: 50%; border: 4px solid white; margin-bottom: 20px;
     }
     nav a { margin: 0 15px; font-weight: bold; color: white; }
 
-    /* Sections */
-    section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    section:nth-child(even) { background: #f9f9f9; }
-    h2 { color: #2c3e50; text-align: center; margin-bottom: 30px; }
-
-    /* Projects */
-    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+    /* Cards */
     .card {
       background: white; padding: 20px; border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px;
     }
-    .card:hover { transform: translateY(-5px); transition: 0.3s; }
+
+    /* Skills */
+    .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; }
+    .skill { background: #ecf0f1; padding: 10px; border-radius: 6px; text-align: center; }
 
     /* Contact */
     .contact p { text-align: center; font-size: 18px; }
     .contact a { color: #3498db; font-weight: bold; }
 
     /* Footer */
-    footer {
-      background: #2c3e50; color: white;
-      text-align: center; padding: 20px;
-    }
+    footer { background: #2c3e50; color: white; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
@@ -53,52 +46,113 @@
   <!-- Header -->
   <header>
     <img src="https://via.placeholder.com/120" alt="Profile Picture">
-    <h1>Rashid Hafiz</h1>
-    <p>Aspiring Developer | Learner | Innovator</p>
+    <h1>Hafiz Rashid</h1>
+    <p>Freelance Economics Consultant & Data Analyst</p>
     <nav>
       <a href="#about">About</a>
-      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work History</a>
+      <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m <b>Rashid Hafiz</b>, and this is my personal portfolio website.  
-    I’m passionate about technology, learning new skills, and building exciting projects.  
-    Here I’ll showcase my work and journey 🚀.</p>
+    <h2>Professional Summary</h2>
+    <p>Independent and results-oriented Freelance Data Analyst / Research Analyst with proven expertise in Excel, Power BI, and SQL. 
+       Experienced in managing diverse client projects involving economic data analysis, stock market research, and advanced reporting. 
+       Skilled at building dashboards, conducting statistical research, and transforming complex data into clear, actionable insights.</p>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>Project 1</h3>
-        <p>Short description of your project goes here.</p>
-      </div>
-      <div class="card">
-        <h3>Project 2</h3>
-        <p>Another project description goes here.</p>
-      </div>
-      <div class="card">
-        <h3>Project 3</h3>
-        <p>Details about your project.</p>
-      </div>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">Microsoft Excel</div>
+      <div class="skill">Power BI</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Technical Analysis</div>
+      <div class="skill">Trading Strategies</div>
+      <div class="skill">Forecasting & Reporting</div>
+      <div class="skill">Analytical Thinking</div>
+      <div class="skill">Client Relationships</div>
+      <div class="skill">Time Management</div>
+      <div class="skill">Team Collaboration</div>
+      <div class="skill">Risk Assessment</div>
     </div>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Work History -->
+  <section id="work">
+    <h2>Work History</h2>
+    <div class="card">
+      <h3>Freelance Data Analyst & Research Analyst</h3>
+      <p><b>Upwork.com (Remote)</b> | 01/2021 – Current</p>
+      <ul>
+        <li>Collected, cleaned, and analyzed datasets using Excel, Power BI, and SQL to deliver actionable insights.</li>
+        <li>Designed interactive dashboards and reports simplifying complex information for clients.</li>
+        <li>Conducted economic and financial research, including stock market trend analysis and forecasting.</li>
+        <li>Supported businesses and startups with financial projections and risk assessments.</li>
+        <li>Delivered customized solutions across various industries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <h3>Master of Arts in Economics</h3>
+      <p>University of Karachi | 2020</p>
+    </div>
+    <div class="card">
+      <h3>Bachelor of Arts in Economics</h3>
+      <p>University of Karachi | 2018</p>
+    </div>
+    <div class="card">
+      <h3>Intermediate (Pre-Medical)</h3>
+      <p>BISE Lahore | 2015</p>
+    </div>
+    <div class="card">
+      <h3>Matriculation (Science)</h3>
+      <p>BISE Larkana | 2013</p>
+    </div>
+  </section>
+
+  <!-- Certifications -->
+  <section id="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Investing In Stocks – The Complete Course</li>
+      <li>Power BI for Data Analysts</li>
+      <li>Microsoft Excel – Data Analysis Expert</li>
+    </ul>
+  </section>
+
+  <!-- Profiles -->
+  <section id="profiles">
+    <h2>Profiles</h2>
+    <ul>
+      <li><a href="https://www.upwork.com/freelancers/~01f8ac78c5805191eb" target="_blank">Upwork</a></li>
+      <li><a href="https://linkedin.com/in/hafiz-rashid-066522141" target="_blank">LinkedIn</a></li>
+      <li><a href="https://www.freelancer.com/u/rashidhafiz96" target="_blank">Freelancer</a></li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
   <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:rashidhafiz96@gmail.com">rashidhafiz96@gmail.com</a></p>
+    <p>📍 Karachi, Pakistan</p>
+    <p>📧 Email: <a href="mailto:rashidhafiz96@gmail.com">rashidhafiz96@gmail.com</a></p>
+    <p>📞 Phone: 03040402450</p>
     <p>GitHub: <a href="https://github.com/rashidhafiz96">github.com/rashidhafiz96</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Rashid Hafiz | All Rights Reserved</p>
+    <p>© 2025 Hafiz Rashid | All Rights Reserved</p>
   </footer>
 
 </body>
